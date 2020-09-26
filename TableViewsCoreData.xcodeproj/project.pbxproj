@@ -14,6 +14,10 @@
 		A2B162D1251F0D11004A81AC /* TableViewsCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2B162CF251F0D11004A81AC /* TableViewsCoreData.xcdatamodeld */; };
 		A2B162D3251F0D14004A81AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2B162D2251F0D14004A81AC /* Assets.xcassets */; };
 		A2B162D6251F0D14004A81AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B162D4251F0D14004A81AC /* LaunchScreen.storyboard */; };
+		A2B162E1251F0D41004A81AC /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B162E0251F0D41004A81AC /* CloudKit.framework */; };
+		A2B162E4251F1388004A81AC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B162E3251F1388004A81AC /* TableViewController.swift */; };
+		A2B162E8251F35D0004A81AC /* DetailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B162E7251F35D0004A81AC /* DetailTableView.swift */; };
+		A2B162EC251F4678004A81AC /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B162EB251F4678004A81AC /* DetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,11 @@
 		A2B162D2251F0D14004A81AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2B162D5251F0D14004A81AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2B162D7251F0D14004A81AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2B162DE251F0D39004A81AC /* TableViewsCoreData.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TableViewsCoreData.entitlements; sourceTree = "<group>"; };
+		A2B162E0251F0D41004A81AC /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		A2B162E3251F1388004A81AC /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		A2B162E7251F35D0004A81AC /* DetailTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableView.swift; sourceTree = "<group>"; };
+		A2B162EB251F4678004A81AC /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2B162E1251F0D41004A81AC /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,7 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				A2B162C5251F0D11004A81AC /* TableViewsCoreData */,
-				A2B162C4251F0D11004A81AC /* Products */,
+				A2B162DF251F0D41004A81AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,21 +63,35 @@
 				A2B162C3251F0D11004A81AC /* TableViewsCoreData.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		A2B162C5251F0D11004A81AC /* TableViewsCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				A2B162DE251F0D39004A81AC /* TableViewsCoreData.entitlements */,
 				A2B162C6251F0D11004A81AC /* AppDelegate.swift */,
 				A2B162C8251F0D11004A81AC /* SceneDelegate.swift */,
-				A2B162CA251F0D11004A81AC /* ViewController.swift */,
 				A2B162CC251F0D11004A81AC /* Main.storyboard */,
+				A2B162CA251F0D11004A81AC /* ViewController.swift */,
+				A2B162E7251F35D0004A81AC /* DetailTableView.swift */,
+				A2B162E3251F1388004A81AC /* TableViewController.swift */,
+				A2B162EB251F4678004A81AC /* DetailTableViewController.swift */,
 				A2B162D2251F0D14004A81AC /* Assets.xcassets */,
 				A2B162D4251F0D14004A81AC /* LaunchScreen.storyboard */,
 				A2B162D7251F0D14004A81AC /* Info.plist */,
 				A2B162CF251F0D11004A81AC /* TableViewsCoreData.xcdatamodeld */,
+				A2B162C4251F0D11004A81AC /* Products */,
 			);
 			path = TableViewsCoreData;
+			sourceTree = "<group>";
+		};
+		A2B162DF251F0D41004A81AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2B162E0251F0D41004A81AC /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +164,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2B162EC251F4678004A81AC /* DetailTableViewController.swift in Sources */,
+				A2B162E8251F35D0004A81AC /* DetailTableView.swift in Sources */,
 				A2B162D1251F0D11004A81AC /* TableViewsCoreData.xcdatamodeld in Sources */,
 				A2B162CB251F0D11004A81AC /* ViewController.swift in Sources */,
 				A2B162C7251F0D11004A81AC /* AppDelegate.swift in Sources */,
+				A2B162E4251F1388004A81AC /* TableViewController.swift in Sources */,
 				A2B162C9251F0D11004A81AC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TableViewsCoreData/TableViewsCoreData.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DZAHM87N2;
 				INFOPLIST_FILE = TableViewsCoreData/Info.plist;
@@ -309,6 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TableViewsCoreData/TableViewsCoreData.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DZAHM87N2;
 				INFOPLIST_FILE = TableViewsCoreData/Info.plist;
